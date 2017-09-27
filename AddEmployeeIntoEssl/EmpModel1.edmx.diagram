@@ -4,8 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="65639c519c0f44e0be1a7e71b454336f" Name="Diagram1" ZoomLevel="52">
-        <EntityTypeShape EntityType="EsslModel.Employee" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="eaeac743c828422191cede2f05482b14" Name="Diagram1">
+        <EntityTypeShape EntityType="EmployeeDataModel.AttendanceMaster" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeDataModel.LeaveLedgerMaster" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

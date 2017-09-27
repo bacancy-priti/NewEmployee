@@ -54,11 +54,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEmployeeintoEssl.cs" />
+    <Compile Include="AttendanceMaster.cs">
+      <DependentUpon>EmpModel1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="Employees.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpModel1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpModel1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpModel1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpModel1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpModel1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveLedgerMaster.cs">
+      <DependentUpon>EmpModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -90,7 +112,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model2.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="NewEmployees.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +125,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="EmpModel1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmpModel1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EmpModel1.edmx.diagram">
+      <DependentUpon>EmpModel1.edmx</DependentUpon>
+    </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -112,6 +141,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EmpModel1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmpModel1.edmx</DependentUpon>
+      <LastGenOutput>EmpModel1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmpModel1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmpModel1.edmx</DependentUpon>
+      <LastGenOutput>EmpModel1.cs</LastGenOutput>
+    </Content>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
