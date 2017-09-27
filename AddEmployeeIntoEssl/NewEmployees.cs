@@ -15,15 +15,14 @@ namespace AddEmployeeIntoEssl
             bool isAdded = false;
             try
             {
-
                 Employee newemp = new Employee
                 {
                     EmployeeName = details.EmployeeName,
                     EmployeeCode = details.EmployeeCode,
                     NumericCode = details.NumericCode,
                     DOJ = details.DOJ,
-                    Location = details.Location ?? "l",
-                    Grade = details.Grade ?? "g",
+                    Location = details.Location ?? "L",
+                    Grade = details.Grade ?? "G",
                     Gender = details.Gender,
                     CompanyId = details.CompanyId,
                     DepartmentId = details.DepartmentId,
@@ -38,7 +37,7 @@ namespace AddEmployeeIntoEssl
                     ShiftGroupId = details.ShiftGroupId,
                     ShiftRosterId = details.ShiftGroupId,
                     LastModifiedBy = details.LastModifiedBy,
-                    Team = details.Team ?? "t",
+                    Team = details.Team ?? "T",
                     StringCode = details.StringCode,
                     DOR = details.DOR,
                     DOC = details.DOC,
